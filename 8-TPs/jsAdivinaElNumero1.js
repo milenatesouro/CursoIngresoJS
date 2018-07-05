@@ -9,12 +9,23 @@ de no ser igual se debe informar si “falta…”  para llegar al número secre
 */
 var numeroSecreto; 
 var contadorIntentos;
+var intentos = 0;
 
 function comenzar()
 {
 	//Genero el número RANDOM entre 1 y 100
 	 
-		//alert(numeroSecreto );
+		//alert(numeroSecreto ); 
+    var numerosecreto;
+    numerosecreto = 5
+    var numeroingresado;
+    numeroingresado = document.getElementById("numero").value;
+    numeroingresado = parseInt (numeroingresado)
+    var intentos;
+    document.getElementById("intentos").value = intentos;
+    
+
+
 	
 
 }
