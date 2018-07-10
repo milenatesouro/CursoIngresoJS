@@ -6,35 +6,40 @@ C.	Para hacer un contrapiso de 1m x 1m se necesitan 2 bolsas de cemento y 3 de c
 
 function Rectangulo () 
 {
-    var preciouno;
-    var preciodos;
-    var preciotres;
-    var resultado;
-    preciouno = document.getElementById("PrecioUno");
-    preciodos = document.getElementById("PrecioDos");
-    preciotres = document.getElementById("PrecioTres");
-    resultado = preciouno + preciodos + preciotres;
-    alert (resultado);
+    var largo;
+	var ancho;
+	var radio;
+	largo=document.getElementById('Largo').value;
+	ancho=document.getElementById('Ancho').value;
+	largo=parseInt(largo);
+	ancho=parseInt(ancho);
+	var rectangulo=(largo*ancho)*3;
+	alert(rectangulo);
+
 
 
 }
 function Circulo () 
 {
-    var precio1;
-    var precio2;
-    var precio3;
-    precio1 = document.getElementById("PrecioUno");
-    precio2 = document.getElementById("PrecioDos");
-    precio3 = document.getElementById("PrecioTres");
+    var largo;
+	radio=document.getElementById('Radio').value;
+	radio=parseInt(radio);
+	var diametro=(radio*2);
+	var circulo=(3.14*radio*diametro)*3;
+	alert(circulo);
 	
 }
 function Materiales () 
 {
-    var precio1;
-    var precio2;
-    var precio3;
-    precio1 = document.getElementById("PrecioUno");
-    precio2 = document.getElementById("PrecioDos");
-    precio3 = document.getElementById("PrecioTres");
+    var largo;
+	var ancho;
+	largo=document.getElementById('Largo').value;
+	ancho=document.getElementById('Ancho').value;
+	largo=parseInt(largo);
+	ancho=parseInt(ancho);
+	var cemento=(largo*ancho)*2;
+	var cal=(largo*ancho)*3;
+	alert("Se necesitan "+cemento+" bolsas de cemento y "+cal+" bolsas de cal");
+
 	
 }
