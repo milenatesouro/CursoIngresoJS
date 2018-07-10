@@ -4,20 +4,18 @@ B.	Ingresar tres precios de productos y mostrar el promedio de los mismos.
 C.	ingresar tres precios de productos  y mostrar precio final (más IVA 21%).
 */
 function Sumar () 
-{
-     var preciouno;
-    var preciodos;
-    var preciotres;
-    var resultado;
-    preciouno = parseInt(preciouno);
-    preciodos = parseInt(preciodos);
-    preciotres = parseInt(preciotres);
-    preciouno = document.getElementById("PrecioUno").value;
-    preciodos = document.getElementById("PrecioDos").value;
-    preciotres = document.getElementById("PrecioTres").value;
-    resultado = preciouno + preciodos + preciotres ;
-    alert (resultado);
-	
+{   
+    var precioUno;
+	var precioDos;
+	var precioTres;
+	precioUno=document.getElementById('PrecioUno').value;
+	precioDos=document.getElementById('PrecioDos').value;
+	precioTres=document.getElementById('PrecioTres').value;
+	precioUno=parseInt(precioUno);
+	precioDos=parseInt(precioDos);
+	precioTres=parseInt(precioTres);
+	var resultado=(precioUno+precioDos+precioTres);
+	alert(resultado);
 }
 function Promedio () 
 {
@@ -28,7 +26,7 @@ function Promedio ()
     preciouno = document.getElementById("PrecioUno").value;
     preciodos = document.getElementById("PrecioDos").value;
     preciotres = document.getElementById("PrecioTres").value;
-    resultado = preciouno * preciodos * preciotres;
+    resultado = (preciouno * preciodos * preciotres)/3;
     alert (resultado);
 	
 }
@@ -37,11 +35,12 @@ function PrecioFinal ()
      var preciouno;
     var preciodos;
     var preciotres;
-    var resultado;
     preciouno = document.getElementById("PrecioUno").value;
     preciodos = document.getElementById("PrecioDos").value;
     preciotres = document.getElementById("PrecioTres").value;
-    resultado = ( preciouno *1.21 ) + (preciodos *1.21) + (preciotres *1.21);
+    var preciofinal =(preciouno + preciodos + preciotres);
+    var iva =(preciofinal*1.21);
+    var resultado = (preciofinal + iva);
     alert (resultado);
 	
 }
