@@ -10,9 +10,41 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  */
 function CalcularPrecio () 
 {
-    var precio = 35;
-    var cantidad = documento.getElementById("cantidad").value;
-    cantidad = parseInt (cantidad);
-    
- 	
-}
+        var cantidad = document.getElementById("Cantidad").value;
+        cantidad = parseInt (cantidad);
+        var preciodescuento;
+        document.getElementById("precioDescuento").value = preciodescuento;
+        var marca = document.getElementById("Marca").value;
+            if (cantidad>=6 && marca=="ArgentinaLuz")    {
+            preciodescuento = (35 * cantidad) * 1.5; 
+            }       else {
+            if (cantidad==5 && marca=="ArgentinaLuz") {
+            preciodescuento = (35 * cantidad ) *1.4;
+        }   else {
+            if (cantidad==5 && (marca=="FelipeLamparas" || marca=="JeLuz" || marca=="HazIluminacion" || marca=="Osram"))    {
+                preciodescuento = (35 * cantidad ) *1.3;
+            }       else    {
+                if (cantidad == 4 & (marca == "ArgentinaLuz" || marca == "FelipeLamparas"))   {
+                    preciodescuento = (35 * cantidad ) * 1.25;
+                } else {
+                    if (cantidad==4 && (marca == "JeLuz" || marca == "HazIluminacion" || marca = "Osram")) {
+                        preciodescuento = (35 * cantidad ) * 1.2;
+                    } else  {
+                        if (cantidad == 3 && marca == "ArgentinaLuz") {
+                            preciodescuento = ( 3 * precio) *1.15;
+                        }   else {
+                            if (cantidad == 3 && marca == "FelipeLamparas") {
+                                preciodescuento = ( 3* precio) *1.1;
+                            }   else {
+                                if (cantidad == 3 & (marca == "JeLuz" || marca == "HazIluminacion" || marca == "Osram"))    {
+                                    preciodescuento = ( 3 * precio ) * 1.05;
+                                }   else {
+                                    if ( preciodescuento > 120) {
+                                        
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
