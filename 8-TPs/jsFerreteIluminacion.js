@@ -10,39 +10,48 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  */
 function CalcularPrecio () 
 {
-    var precio = 35;
-    precio = parseInt (precio);
+    var preciounitario = 35;
+    var total;
+    var preciototal;
+    var descuento;
+    var impuesto;
     var cantidadlamparas = document.getElementById("Cantidad").value;
     var marca = document.getElementById("Marca").value;
     cantidadlamparas = parseInt (cantidadlamparas);
-    var total; 
+    preciounitario = parseInt (preciounitario);
+    preciototal = parseInt (preciototal);
     total = parseInt (total);
-    parseInt(total);
-    var descuento;
-    document.getElementById("precioDescuento").value = total;
+    preciototal = (preciounitario * cantidadlamparas);
     if (cantidadlamparas>=6 && marca=="ArgentinaLuz" ) {
         descuento = 0.5;
-        total = (precio * descuento);
+        total = (preciototal * descuento);
+        document.getElementById("precioDescuento").value = total;
     } else if (cantidadlamparas==5 && marca=="ArgentinaLuz") {
         descuento = 0.4
-        total = (precio * descuento);
+        total = (preciototal * descuento);
+        document.getElementById("precioDescuento").value = total;
     } else if (cantidadlamparas==4 && (marca=="ArgentinaLuz" || marca=="FelipeLamparas")) {
         descuento = 0.25;
-        total = (precio * descuento);
+        total = (preciototal * descuento);
+        document.getElementById("precioDescuento").value = total;
     } else if (cantidadlamparas==4 && (marca=="JeLuz" || marca=="HazIluminacion" || marca=="Osram" ) ) {
         descuento = 0.2;
-        total = (precio * descuento);
+        total = (preciototal * descuento);
+        document.getElementById("precioDescuento").value = total;
     } else if (cantidadlamparas==3 && marca=="ArgentinaLuz") {
         descuento = 0.15;
-        total = (precio * descuento);
+        total = (preciototal * descuento);
+        document.getElementById("precioDescuento").value = total;
     } else if (cantidadlamparas==3 && marca=="FelipeLamparas") {
         descuento = 0.1;
-        total = (precio * descuento);
+        total = (preciototal * descuento);
+        document.getElementById("precioDescuento").value = total;
     } else if (cantidadlamparas==3 && (marca=="Jeluz" || marca=="HazIluminacion" || marca=="Osram" )) {
         descuento = 0.05;
-        total = (precio * descuento);
+        total = (preciototal * descuento);
+        document.getElementById("precioDescuento").value = total;
     }  else if (total>120) {
-        var impuesto = (total * 1.1);
+        impuesto = (total * 1.1);
         alert (" Usted pagó " + impuesto + " de IIBB. ");
     }
     
