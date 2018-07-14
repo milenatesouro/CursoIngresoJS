@@ -18,16 +18,15 @@ function CalcularPrecio ()
     var cantidadlamparas = document.getElementById("Cantidad").value;
     var marca = document.getElementById("Marca").value;
     cantidadlamparas = parseInt (cantidadlamparas);
-    preciounitario = parseInt (preciounitario);
-    preciototal = parseInt (preciototal);
-    total = parseInt (total);
+  
     preciototal = (preciounitario * cantidadlamparas);
+
     if (cantidadlamparas>=6 && marca=="ArgentinaLuz" ) {
         descuento = 0.5;
         total = (preciototal * descuento);
         document.getElementById("precioDescuento").value = total;
     } else if (cantidadlamparas==5 && marca=="ArgentinaLuz") {
-        descuento = 0.4
+        descuento = 0.4;
         total = (preciototal * descuento);
         document.getElementById("precioDescuento").value = total;
     } else if (cantidadlamparas==4 && (marca=="ArgentinaLuz" || marca=="FelipeLamparas")) {
@@ -50,7 +49,7 @@ function CalcularPrecio ()
         descuento = 0.05;
         total = (preciototal * descuento);
         document.getElementById("precioDescuento").value = total;
-    }  else if (total>120) {
+    }  if (total>120) {
         impuesto = (total * 1.1);
         alert (" Usted pagó " + impuesto + " de IIBB. ");
     }
