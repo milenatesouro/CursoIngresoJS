@@ -19,15 +19,17 @@ function mostrar()
 			minimo = 3;
 		} else { 
 			if (numero>maximo) {
-				maximo = numero ; 
+				maximo = numero ;
+				resultado = "Ingrese si para continuar."; } 
 				if (numero<minimo) {
 					minimo = numero;
+					resultado = "Ingrese si para continuar.";
 				}
 			}
 		}
 		
 	
-	}
+	
 
 
 
