@@ -10,24 +10,16 @@ de no ser igual se debe informar si “falta…”  para llegar al número secre
 var numeroSecreto; 
 var contadorIntentos;
 var intentos = 0;
+var numeroingresado;
+numeroSecreto = Math.floor((Math.random() * 100) + 1);
+numeroingresado = document.getElementById("numero").value;
 
 function comenzar()
 {
 	//Genero el número RANDOM entre 1 y 100
 	 
 		//alert(numeroSecreto ); 
-    var numerosecreto;
-    numerosecreto = 5
-    var numeroingresado;
-    numeroingresado = document.getElementById("numero").value;
-    numeroingresado = parseInt (numeroingresado)
-    var intentos;
-    document.getElementById("intentos").value = intentos;
-    
-
-
-	
-
+      if (numeroSecreto == )
 }
 
 function verificar()
