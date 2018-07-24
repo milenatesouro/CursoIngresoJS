@@ -11,6 +11,7 @@ function mostrar()
 	while(respuesta=='si') 
 	{
 		numero = prompt ("Ingrese numeros.");
+		resultado = prompt ("Ingrese si si quiere continuar.");
 		
 		if (bandera) {
 			bandera = false;
