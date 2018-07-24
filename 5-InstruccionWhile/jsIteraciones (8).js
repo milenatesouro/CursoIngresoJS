@@ -15,8 +15,8 @@ function mostrar()
 		if (numero>0) {
 			positivo = positivo + numero; 
 			resultado = prompt ("Ingrese si para seguir ingresando números.");
-		} else if (numero<1) {
-			negativo = negativo * numero; 
+		} else {
+			negativo = negativo * numero;
 			resultado = prompt ("Ingrese si para seguir ingresando números.");
 		}
 	}

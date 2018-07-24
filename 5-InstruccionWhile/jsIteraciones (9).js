@@ -5,9 +5,25 @@ function mostrar()
 	// declarar variables
 	
 	var respuesta='si';
-
-	while(respuesta!='no')
+	var maximo;
+	var minimo;
+	var numero;
+	while(respuesta=='si') 
 	{
+		numero = prompt ("Ingrese numeros.");
+		
+		if (bandera) {
+			bandera = false;
+			maximo = 15;
+			minimo = 3;
+		} else { 
+			if (numero>maximo) {
+				maximo = numero ; 
+				if (numero<minimo) {
+					minimo = numero;
+				}
+			}
+		}
 		
 	
 	}
