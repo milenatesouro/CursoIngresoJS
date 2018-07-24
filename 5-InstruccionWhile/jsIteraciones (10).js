@@ -13,11 +13,12 @@ function mostrar()
 
 	while(respuesta!="no")
 	{
+		contador++;
 		numero = prompt ("Ingrese numero");
 		numero = parseInt (numero);
 		
-		if (){
-
+		if (numero>0){	
+			
 		}
 	
 	}
