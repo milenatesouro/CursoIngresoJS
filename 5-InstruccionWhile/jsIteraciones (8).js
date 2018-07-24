@@ -10,9 +10,15 @@ function mostrar()
 	while (respuesta == "si") {
 		contador++;
 		numero = prompt ("Ingrese la cantidad de números deseados.");
-		numero = parseInt (numeros);
-		positivo = 
-		respuesta = Prompt("Ingrese si para continuar ingresando números.")
+		numero = parseInt (numero);
+		
+		if (numero>0) {
+			positivo = positivo + numero; 
+			resultado = prompt ("Ingrese si para seguir ingresando números.");
+		} else if (numero<1) {
+			negativo = negativo * numero; 
+			resultado = prompt ("Ingrese si para seguir ingresando números.");
+		}
 	}
 
 
