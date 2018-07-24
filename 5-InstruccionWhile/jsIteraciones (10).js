@@ -5,6 +5,7 @@ function mostrar()
 	//declarar contadores y variables 
 	
 	var respuesta="si";
+	
 
 	while(respuesta!="no")
 	{
