@@ -6,21 +6,39 @@ function mostrar()
 	
 	var respuesta="si";
 	var numero;
-	var negativo=1;
-	var positivo=0;
-	var par;
+	var contadornegativo=0;
+	var acumuladonegativo=0;
+	var contadorpositivo=0;
+	var acumuladopositivo;
+	var cantidadceros;
+	var contadorpares;
+	var promediopositivo;
+	var promedionegativo;
+	var diferencia;
+	var mensaje;
 
 
 	while(respuesta!="no")
-	{
-		contador++;
-		numero = prompt ("Ingrese numero");
+	{	numero = prompt ("Ingrese numero");
 		numero = parseInt (numero);
-		
-		if (numero>0){	
-			
+		while (IsNan(numero)) {
+			numero = prompt ("Ingrese numero");
+			numero = parseInt (numero);
+		} if (numero<0) {
+			contadornegativo++; 
+			acumuladonegativo+= numero ;
+		} else if (numero>0) {
+			contadorpositivo++;
+			acumuladopositivo++;
+		} else {
+			contadorceros++;
 		}
-	
+		if (numero/2==1) {
+			contadorpares++;
+		} 
+		
+		promedio = acumuladopositivo / contadorpositivo;
+
 	}
 
 
