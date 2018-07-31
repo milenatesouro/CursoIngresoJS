@@ -15,15 +15,15 @@ function mostrar()
 		
 		if (bandera) {
 			bandera = false;
-			maximo = 15;
-			minimo = 3;
+			maximo = 10000;
+			minimo = 1;
 		} else { 
 			if (numero>maximo) {
 				maximo = numero ;
-				resultado = "Ingrese si para continuar."; } 
+				resultado = "Ingrese si si quiere continuar."; } 
 				if (numero<minimo) {
 					minimo = numero;
-					resultado = "Ingrese si para continuar.";
+					resultado = "Ingrese si si quiere continuar.";
 				}
 			}
 		}
