@@ -26,6 +26,7 @@ function verificar()
 {
 	numeroIngresado = document.getElementById("numero").value;
 	intentos++;
+	document.getElementById("intentos").value = intentos; 
 	if (numeroIngresado == numeroSecreto && intentos == 1) {
 		alert (" usted es un psiquico ");
 	} else if (numeroIngresado == numeroSecreto && intentos == 2) {
