@@ -19,7 +19,9 @@ function comenzar()
 	//Genero el número RANDOM entre 1 y 100
 	 
 		//alert(numeroSecreto ); 
-      if (numeroSecreto == )
+      if (numeroSecreto == numeroingresado) {
+        
+      }
 }
 
 function verificar()
