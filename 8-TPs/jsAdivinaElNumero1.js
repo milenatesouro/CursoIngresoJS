@@ -11,21 +11,27 @@ var numeroSecreto;
 var contadorIntentos;
 var intentos = 0;
 var numeroingresado;
-numeroSecreto = Math.floor((Math.random() * 100) + 1);
-numeroingresado = document.getElementById("numero").value;
+
 
 function comenzar()
 {
 	//Genero el número RANDOM entre 1 y 100
 	 
 		//alert(numeroSecreto ); 
-      if (numeroSecreto == numeroingresado) {
-        
-      }
+      numeroSecreto = Math.floor((Math.random() * 100) + 1);
+      alert (numeroSecreto);
+      intentos=0;
 }
 
 function verificar()
 {
-	
-	
+  numeroingresado = document.getElementById("numero").value;
+  intentos++;
+  if (numeroSecreto == numeroingresado) {
+    alert (" Usted es un ganador!!! Y en solo " + intentos + " intentos ");
+  }	else if (numeroSecreto > numeroingresado) {
+    alert ("Te pasaste.");
+  } else if (numeroSecreto < numeroingresado) {
+    alert ("Te falta.");
+  }
 }
